@@ -1,0 +1,151 @@
+body {
+    background-image: url("../Image/Img1.jpg"); 
+     background-size: cover;
+     opacity:50;
+     background-attachment: fixed;
+     font-family: Bella MT Bold;
+ }
+ .containers {
+    background-color: hsla(0, 0%, 20%, 0);
+    background-size: auto;
+    overflow: hidden;
+    width: auto;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+ }
+ .containers a {
+    float: right;
+    margin-left: 15px;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+ }
+ .containers a:hover {
+    background-color: #F90067;
+    color: #000;
+ }
+ .container {
+     text-align: center;
+ }
+ .container h1 {
+    margin-top: 135px;
+    display: inline-table;
+    font-size: 3.5rem;
+    color: #F85C70;
+    font-family: Bella MT Bold;
+    width: 100%;
+    line-height: 4.1rem;
+    font-weight: 100;
+ }
+ .container h1 span {
+    color: var(--green);
+    display: inline-block;
+    line-height: 3.5rem;
+    font-weight: 100;   
+    text-shadow: 0 0 2px #000;
+ }
+ .container p {
+    display: inline-block;
+    color: #fcf6fa;
+    font-family: Bella MT Bold;
+    font-style:inherit;
+    width: 90%;
+   
+ } 
+ 
+ button {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+ }
+ 
+ .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ .edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+     to left,
+     #F90067, #0a0a0a, #F90067, #0c0c0c
+   );
+ }
+ 
+ .front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Bella MT Bold;
+  color:black;
+  background: linear-gradient(
+    to left,
+    #FB8DA0, #F90067, #FB5490, #FBC0C0
+  );;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform
+     600ms
+     cubic-bezier(.3, .7, .4, 1);
+ }
+ 
+ button:hover {
+  filter: brightness(110%);
+ }
+ 
+ button:hover .front {
+  transform: translateY(-6px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+ }
+ 
+ button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform
+     250ms
+     cubic-bezier(.3, .7, .4, 1.5);
+ }
+ 
+ button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+ }
+ 
+ button:focus:not(:focus-visible) {
+  outline: none;
+ }
+   

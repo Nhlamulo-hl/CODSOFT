@@ -1,0 +1,87 @@
+
+    body {
+        background-image: url("../pics/pic2.jpg"); 
+        width: 520px;
+        background-size: 70;
+        border-radius: 20px;
+        opacity: 100%;
+          box-shadow: -5px -5px 9px rgba(12, 12, 0.45), 5px 5px 9px rgb(10, 10, 10);
+        padding: 45px;
+         scale: 0.6;
+        margin-left: auto;
+    margin-right: auto;
+      }
+      
+      .input input {
+        height: 100px;
+        width: 70%;
+        margin-right:30px;
+        border-radius: 10px;
+        background: #FB8DA0;
+        box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+        border: 0;
+        
+        font-size: 2.5rem;
+        padding: 0 30px;
+      }
+      
+    
+      
+      .buttons button {
+        cursor: pointer;
+        height: 60px;
+        width: 60px;
+        border: 0;
+        font-size: 2rem;
+        border-radius: 50px;
+        background: #0f0f0f;
+        box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+        color: rgb(137, 137, 137);
+      }
+      
+      .buttons button:focus {
+        background: #dde1e7;
+        box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+      }
+      
+      .buttons {
+        padding-top: 30px;
+        display: flex;
+       
+      }
+.calculator {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    border: 10px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-image: url("../Picture/Pic2.avif"); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #03a9f4, #f441a5);
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(90deg,#FB8DA0, #FBC0C0, #FB5490, #FBC0C0);
+}
+
+h1{
+font-family: Bella 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #0c0b0b;
+}
+
